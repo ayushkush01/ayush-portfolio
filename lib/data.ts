@@ -16,7 +16,7 @@ export const MY_STACK = {
     frontend: [
         {
             name: 'Angular',
-            icon: '/logo/Angular_gradient.png', // Placeholder - you can add Angular logo later
+            icon: '/logo/Angular_gradient_logo.png', // Placeholder - you can add Angular logo later
         },
         {
             name: 'Vue',
@@ -39,7 +39,7 @@ export const MY_STACK = {
     backend: [
         {
             name: '.NET Framework',
-            icon: '/logo/dotnet.png', // Placeholder - you can add .NET logo later
+            icon: '/logo/net.png', // Placeholder - you can add .NET logo later
         },
         {
             name: 'C#',
