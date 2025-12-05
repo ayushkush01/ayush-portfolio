@@ -16,11 +16,11 @@ export const MY_STACK = {
     frontend: [
         {
             name: 'Angular',
-            icon: '/angular.svg', // Placeholder - you can add Angular logo later
+            icon: '/logo/angular.png', // Placeholder - you can add Angular logo later
         },
         {
             name: 'Vue',
-            icon: '/vue.png', // Placeholder - you can add Vue logo later
+            icon: '/logo/vue.png', // Placeholder - you can add Vue logo later
         },
         {
             name: 'TypeScript',
@@ -30,15 +30,31 @@ export const MY_STACK = {
             name: 'JavaScript',
             icon: '/logo/js.png',
         },
+        {
+            name: 'Tailwind CSS',
+            icon: '/logo/tailwind.png',
+        },
+        {
+            name: 'Bootstrap',
+            icon: '/logo/bootstrap.png',
+        },
+        {
+            name: 'HTML',
+            icon: '/logo/html.png',
+        },
+        {
+            name: 'CSS',
+            icon: '/logo/css.png',
+        },
     ],
     backend: [
         {
             name: '.NET Framework',
-            icon: '/net.png', // Placeholder - you can add .NET logo later
+            icon: '/logo/dotnet.png', // Placeholder - you can add .NET logo later
         },
         {
             name: 'C#',
-            icon: '/logo/node.png', // Placeholder - you can add C# logo later
+            icon: '/logo/c2.png', // Placeholder - you can add C# logo later
         },
     ],
     database: [
@@ -48,7 +64,7 @@ export const MY_STACK = {
         },
         {
             name: 'SQL Server',
-            icon: '/logo/ssms.svg', // Placeholder - you can add SQL Server logo later
+            icon: '/logo/ssms.png', // Placeholder - you can add SQL Server logo later
         },
     ],
     tools: [
