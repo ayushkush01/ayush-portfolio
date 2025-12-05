@@ -14,67 +14,90 @@ export const SOCIAL_LINKS = [
 
 export const MY_STACK = {
     frontend: [
-        {
-            name: 'Angular',
-            icon: '/logo/angular.svg',
-        },
-        {
-            name: 'Vue',
-            icon: '/logo/vue.svg',
-        },
-        {
-            name: 'TypeScript',
-            icon: '/logo/typescript.svg',
-        },
-        {
-            name: 'JavaScript',
-            icon: '/logo/javascript.svg',
-        },
+      {
+        name: 'Angular',
+        icon: '/logo/angular.svg', // Changed from js.png
+      },
+      {
+        name: 'TypeScript',
+        icon: '/logo/typescript.svg', // Changed from ts.png to svg for better quality
+      },
+      {
+        name: 'JavaScript',
+        icon: '/logo/javascript.svg',
+      },
+      {
+        name: 'HTML5', // Added (Standard requirement)
+        icon: '/logo/html5.svg',
+      },
+      {
+        name: 'CSS3', // Added (Standard requirement)
+        icon: '/logo/css3.svg',
+      },
+      {
+        name: 'Vue',
+        icon: '/logo/vue.svg', // Changed from js.png
+      },
     ],
     backend: [
-        {
-            name: '.NET Framework',
-            icon: '/logo/dotnet.svg',
-        },
-        {
-            name: 'C#',
-            icon: '/logo/csharp.svg',
-        },
+      {
+        name: '.NET Core / Framework',
+        icon: '/logo/dotnet.svg', // Changed from node.png
+      },
+      {
+        name: 'C#',
+        icon: '/logo/csharp.svg', // Changed from node.png
+      },
+      {
+        name: 'ASP.NET Web API', // Added based on your projects
+        icon: '/logo/dotnet-api.svg', // You can use the generic dotnet logo here too
+      },
     ],
     database: [
-        {
-            name: 'MySQL',
-            icon: '/logo/mysql.svg',
-        },
-        {
-            name: 'SQL Server',
-            icon: '/logo/sqlserver.svg',
-        },
+      {
+        name: 'SQL Server',
+        icon: '/logo/sql-server.svg', // Changed from mysql.svg
+      },
+      {
+        name: 'MySQL',
+        icon: '/logo/mysql.svg',
+      },
     ],
     tools: [
-        {
-            name: 'Git',
-            icon: '/logo/git.svg',
-        },
-        {
-            name: 'Postman',
-            icon: '/logo/postman.svg',
-        },
-        {
-            name: 'Jira',
-            icon: '/logo/jira.svg',
-        },
-        {
-            name: 'Swagger',
-            icon: '/logo/swagger.svg',
-        },
-        {
-            name: 'Visual Studio',
-            icon: '/logo/visualstudio.svg',
-        },
+      {
+        name: 'Git',
+        icon: '/logo/git.svg',
+      },
+      {
+        name: 'GitHub',
+        icon: '/logo/github.svg', // Added based on your links
+      },
+      {
+        name: 'AWS', // Added based on your Projects (S3)
+        icon: '/logo/aws.svg',
+      },
+      {
+        name: 'Postman',
+        icon: '/logo/postman.svg', // Changed from git.png
+      },
+      {
+        name: 'Jira',
+        icon: '/logo/jira.svg', // Changed from git.png
+      },
+      {
+        name: 'Swagger',
+        icon: '/logo/swagger.svg', // Changed from git.png
+      },
+      {
+        name: 'Visual Studio',
+        icon: '/logo/visual-studio.svg', // Changed from git.png
+      },
+      {
+        name: 'OpenAI API', // Added based on LCP project
+        icon: '/logo/openai.svg',
+      },
     ],
-};
-
+  };
 
 export const PROJECTS: IProject[] = [
     {
@@ -82,99 +105,97 @@ export const PROJECTS: IProject[] = [
         slug: 'lcp-life-care-plan',
         year: 2024,
         description: `
-      A comprehensive legal-medical case management system used by law firms, attorneys, and physicians to manage patient cases related to accidents. The platform centralizes medical records, physician inputs, legal documentation, and generates courtroom-ready reports. <br/><br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>Records: Upload and store medical documents (X-rays, previous reports) with AI-powered summarization via OpenAI API to support faster clinical review</li>
-        <li>Interview: Structured physician-led questionnaire with over 30 questions for detailed patient data collection</li>
-        <li>Exhibits: Upload and manage injury-related images, stored securely in AWS S3 Buckets</li>
-        <li>Opinions: Record medical opinions, injury assessments, and calculate Average Residual Years based on demographic factors</li>
-        <li>Requirements: Document lifelong needs including medication, nursing care, therapies, and medical equipment</li>
-        <li>Review: Generate consolidated, courtroom-ready PDF legal reports for case presentation</li>
-      </ul>
-      `,
+          A comprehensive legal-medical case management system used by law firms, attorneys, and physicians to handle patient cases resulting from accidents. The system centralizes medical records, physician inputs, and legal documents to generate courtroom-ready reports.
+          <br/> <br/>
+          <strong>Key Features:</strong>
+          <ul>
+            <li><strong>Records Management:</strong> Upload and store medical documents (X-rays, previous reports) with AI-powered summarization via OpenAI API for expedited review.</li>
+            <li><strong>Physician Interview:</strong> Digital physician-led intake forms with dynamic questioning for precise patient data collection.</li>
+            <li><strong>Digital Exhibits:</strong> Secure upload and storage of injury-related photography using AWS S3 Buckets.</li>
+            <li><strong>Opinion Analysis:</strong> Recording of injury assessments and calculation of Average Residual Years based on demographic data.</li>
+            <li><strong>Requirements Planning:</strong> Documentation of lifelong needs including medication, nursing care, and medical equipment specifications.</li>
+            <li><strong>Report Generation:</strong> Automated generation of consolidated, courtroom-ready PDF legal reports.</li>
+          </ul>
+          `,
         role: `
-      Full Stack Developer <br/>
-      Responsible for end-to-end development across frontend, backend, database, and deployment:
-      <ul>
-        <li>Developed secure and scalable REST APIs using ASP.NET Web API and C#</li>
-        <li>Implemented a responsive, component-based frontend using Angular and TypeScript</li>
-        <li>Integrated AI-based document summarization using the OpenAI API to streamline physician review</li>
-        <li>Configured AWS S3 Buckets for secure and reliable storage of medical documents and exhibits</li>
-        <li>Designed and optimized relational schemas using Microsoft SQL Server and LINQ to SQL</li>
-        <li>Collaborated with stakeholders to align system workflows with U.S. legal standards, improving case preparation time and documentation accuracy for litigation</li>
-      </ul>
-      `,
+          <strong>Full Stack Developer</strong> <br/>
+          Managed end-to-end development including frontend, backend, database design, and deployment:
+          <ul>
+            <li>Developed secure, scalable APIs using ASP.NET Web API and C#.</li>
+            <li>Built a responsive, type-safe frontend using Angular and TypeScript.</li>
+            <li>Integrated OpenAI API for automated document summarization features.</li>
+            <li>Implemented secure file storage solutions using AWS S3.</li>
+            <li>Designed and optimized relational database schemas using Microsoft SQL Server and LINQ to SQL.</li>
+            <li>Ensured application compliance with U.S. legal standards, streamlining case preparation workflows and improving document accuracy.</li>
+          </ul>
+          `,
         techStack: [
-            'Angular',
-            'TypeScript',
-            'ASP.NET Web API',
-            'C#',
-            'LINQ to SQL',
-            'Microsoft SQL Server',
-            'AWS Server',
-            'AWS S3 Bucket',
-            'OpenAI API',
-            'Postman',
-            'JIRA',
-            'GitHub',
+          'Angular',
+          'TypeScript',
+          'ASP.NET Web API',
+          'C#',
+          'LINQ to SQL',
+          'Microsoft SQL Server',
+          'AWS (EC2/S3)',
+          'OpenAI API',
+          'Postman',
+          'JIRA',
+          'GitHub',
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp', // Placeholder - you can add project images later
-        longThumbnail: '/projects/long/mti-electronics.webp', // Placeholder - you can add project images later
+        thumbnail: '/projects/thumbnail/mti-electronics.webp', // Placeholder
+        longThumbnail: '/projects/long/mti-electronics.webp', // Placeholder
         images: [
-            '/projects/images/mti-electronics-1.webp', // Placeholder - you can add project images later
-            '/projects/images/mti-electronics-2.webp', // Placeholder - you can add project images later
+          '/projects/images/mti-electronics-1.webp', // Placeholder
+          '/projects/images/mti-electronics-2.webp', // Placeholder
         ],
-    },
-    {
+      },
+      {
         title: 'CRM (Customer Relationship Management)',
         slug: 'crm-customer-relationship-management',
         year: 2024,
         description: `
-      A marketing-focused CRM platform designed to manage leads, track LinkedIn responses, monitor campaign performance, and provide real-time analytics for the marketing team. The system centralizes customer and campaign data to improve decision-making and reporting. <br/><br/>
-      
-      Key Features:<br/>
-      <ul>
-        <li>Lead Management: Capture, categorize, and track leads from multiple channels, including LinkedIn</li>
-        <li>Response Tracking: Record LinkedIn conversations, responses, and follow-up activities for each lead</li>
-        <li>Campaign Management: Configure, monitor, and analyze marketing campaigns with an emphasis on ROI and conversion</li>
-        <li>Performance Dashboard: Real-time dashboards for marketing KPIs, funnel metrics, and team productivity</li>
-        <li>Centralized Data Storage: Maintain detailed profiles for customers, campaigns, and interactions to support analytics and reporting</li>
-      </ul>
-      `,
+          A specialized marketing CRM designed to optimize lead management, track LinkedIn engagement, monitor campaign performance, and provide real-time analytics. It facilitates data-driven decision-making through centralized reporting and visualization.
+          <br/> <br/>
+          <strong>Key Features:</strong>
+          <ul>
+            <li><strong>Lead Management:</strong> Centralized capture, categorization, and tracking of leads from multiple channels, including LinkedIn integration.</li>
+            <li><strong>Response Tracking:</strong> Systematic monitoring and recording of outreach interactions and follow-up schedules.</li>
+            <li><strong>Campaign Management:</strong> Creation and tracking of marketing campaigns to analyze ROI and engagement metrics.</li>
+            <li><strong>Performance Dashboard:</strong> Real-time visualization of marketing KPIs and team productivity statistics.</li>
+            <li><strong>Data Warehousing:</strong> Centralized storage of customer and campaign data to support detailed reporting and future analysis.</li>
+          </ul>
+          `,
         role: `
-      Full Stack Developer <br/>
-      Involved in the full software development lifecycle from design to deployment:
-      <ul>
-        <li>Designed and developed REST APIs for lead, meeting, and campaign management using ASP.NET Web API and C#</li>
-        <li>Built responsive, workflow-oriented user interfaces for the marketing team using Angular and TypeScript</li>
-        <li>Implemented analytical views and dashboards to surface real-time performance metrics</li>
-        <li>Optimized database models and queries using Microsoft SQL Server and LINQ to SQL to ensure reliable reporting</li>
-        <li>Improved lead tracking, follow-up workflows, and LinkedIn outreach management to increase operational efficiency</li>
-      </ul>
-      `,
+          <strong>Full Stack Developer</strong> <br/>
+          Responsible for the entire software development lifecycle (SDLC):
+          <ul>
+            <li>Designed RESTful APIs for lead processing and meeting management using ASP.NET Web API and C#.</li>
+            <li>Created a responsive and intuitive user interface for complex marketing workflows using Angular and TypeScript.</li>
+            <li>Implemented real-time analytics engines and interactive performance dashboards.</li>
+            <li>Optimized database performance and query execution using Microsoft SQL Server and LINQ.</li>
+            <li>Enhanced system efficiency to improve lead tracking accuracy and streamline LinkedIn outreach operations.</li>
+          </ul>
+          `,
         techStack: [
-            'Angular',
-            'TypeScript',
-            'ASP.NET Web API',
-            'C#',
-            'LINQ to SQL',
-            'Microsoft SQL Server',
-            'AWS Server',
-            'Postman',
-            'JIRA',
-            'GitHub',
+          'Angular',
+          'TypeScript',
+          'ASP.NET Web API',
+          'C#',
+          'LINQ to SQL',
+          'Microsoft SQL Server',
+          'AWS',
+          'Postman',
+          'JIRA',
+          'GitHub',
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp', // Placeholder - you can add project images later
-        longThumbnail: '/projects/long/mti-electronics.webp', // Placeholder - you can add project images later
+        thumbnail: '/projects/thumbnail/mti-electronics.webp', // Placeholder
+        longThumbnail: '/projects/long/mti-electronics.webp', // Placeholder
         images: [
-            '/projects/images/mti-electronics-1.webp', // Placeholder - you can add project images later
-            '/projects/images/mti-electronics-2.webp', // Placeholder - you can add project images later
+          '/projects/images/mti-electronics-1.webp', // Placeholder
+          '/projects/images/mti-electronics-2.webp', // Placeholder
         ],
-    },
+      },
 ];
-
 
 export const MY_EXPERIENCE = [
     {
