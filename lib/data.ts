@@ -16,11 +16,11 @@ export const MY_STACK = {
     frontend: [
         {
             name: 'Angular',
-            icon: '/logo/js.png', // Placeholder - you can add Angular logo later
+            icon: '/angular.svg', // Placeholder - you can add Angular logo later
         },
         {
             name: 'Vue',
-            icon: '/logo/js.png', // Placeholder - you can add Vue logo later
+            icon: '/vue.png', // Placeholder - you can add Vue logo later
         },
         {
             name: 'TypeScript',
@@ -34,7 +34,7 @@ export const MY_STACK = {
     backend: [
         {
             name: '.NET Framework',
-            icon: '/logo/node.png', // Placeholder - you can add .NET logo later
+            icon: '/net.png', // Placeholder - you can add .NET logo later
         },
         {
             name: 'C#',
@@ -48,7 +48,7 @@ export const MY_STACK = {
         },
         {
             name: 'SQL Server',
-            icon: '/logo/mysql.svg', // Placeholder - you can add SQL Server logo later
+            icon: '/logo/ssms.svg', // Placeholder - you can add SQL Server logo later
         },
     ],
     tools: [
@@ -58,19 +58,19 @@ export const MY_STACK = {
         },
         {
             name: 'Postman',
-            icon: '/logo/git.png', // Placeholder - you can add Postman logo later
+            icon: '/logo/postman.png', // Placeholder - you can add Postman logo later
         },
         {
             name: 'Jira',
-            icon: '/logo/git.png', // Placeholder - you can add Jira logo later
+            icon: '/logo/jira.png', // Placeholder - you can add Jira logo later
         },
         {
             name: 'Swagger',
-            icon: '/logo/git.png', // Placeholder - you can add Swagger logo later
+            icon: '/logo/swagger.png', // Placeholder - you can add Swagger logo later
         },
         {
             name: 'Visual Studio',
-            icon: '/logo/git.png', // Placeholder - you can add VS logo later
+            icon: '/logo/vscode.png', // Placeholder - you can add VS logo later
         },
     ],
 };
