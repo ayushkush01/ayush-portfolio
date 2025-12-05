@@ -16,7 +16,7 @@ export const MY_STACK = {
     frontend: [
         {
             name: 'Angular',
-            icon: '/logo/angular.png', // Placeholder - you can add Angular logo later
+            icon: '/logo/Angular_gradient.png', // Placeholder - you can add Angular logo later
         },
         {
             name: 'Vue',
@@ -34,18 +34,7 @@ export const MY_STACK = {
             name: 'Tailwind CSS',
             icon: '/logo/tailwind.png',
         },
-        {
-            name: 'Bootstrap',
-            icon: '/logo/bootstrap.png',
-        },
-        {
-            name: 'HTML',
-            icon: '/logo/html.png',
-        },
-        {
-            name: 'CSS',
-            icon: '/logo/css.png',
-        },
+       
     ],
     backend: [
         {
@@ -54,7 +43,7 @@ export const MY_STACK = {
         },
         {
             name: 'C#',
-            icon: '/logo/c2.png', // Placeholder - you can add C# logo later
+            icon: '/logo/csharp.png', // Placeholder - you can add C# logo later
         },
     ],
     database: [
@@ -82,11 +71,11 @@ export const MY_STACK = {
         },
         {
             name: 'Swagger',
-            icon: '/logo/swagger.png', // Placeholder - you can add Swagger logo later
+            icon: '/logo/Swagger-logo.png', // Placeholder - you can add Swagger logo later
         },
         {
             name: 'Visual Studio',
-            icon: '/logo/vscode.png', // Placeholder - you can add VS logo later
+            icon: '/logo/vscpoe.png', // Placeholder - you can add VS logo later
         },
     ],
 };
