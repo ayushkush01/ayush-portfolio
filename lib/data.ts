@@ -90,24 +90,24 @@ export const PROJECTS: IProject[] = [
       
       Key Features:<br/>
       <ul>
-        <li>📋 Records: Upload and store medical documents (X-rays, previous reports) with AI-powered summarization via OpenAI API for quick doctor review</li>
-        <li>📝 Interview: Physician-led form with 30 questions for patient data collection</li>
-        <li>📸 Exhibits: Upload injury-related photos, stored in AWS S3 Buckets</li>
-        <li>💭 Opinions: Record injury assessments and calculate Average Residual Years based on age, gender, and race</li>
-        <li>📋 Requirements: Document lifelong needs such as medication, nursing care, and medical equipment</li>
-        <li>📄 Review: Generate consolidated courtroom-ready PDF legal reports</li>
+        <li Records: Upload and store medical documents (X-rays, previous reports) with AI-powered summarization via OpenAI API for quick doctor review</li>
+        <li Interview: Physician-led form with 30 questions for patient data collection</li>
+        <li Exhibits: Upload injury-related photos, stored in AWS S3 Buckets</li>
+        <li Opinions: Record injury assessments and calculate Average Residual Years based on age, gender, and race</li>
+        <li Requirements: Document lifelong needs such as medication, nursing care, and medical equipment</li>
+        <li>Review: Generate consolidated courtroom-ready PDF legal reports</li>
       </ul>
       `,
         role: `
       Full Stack Developer <br/>
       Managed frontend, backend, database, and deployment:
       <ul>
-        <li>✅ Developed secure, scalable APIs using ASP.NET Web API and C#</li>
-        <li>🎨 Built responsive frontend using Angular and TypeScript</li>
-        <li>🤖 Integrated AI-based document summarization using OpenAI API</li>
-        <li>☁️ Implemented AWS S3 Bucket for secure file storage</li>
-        <li>💾 Designed and optimized database using Microsoft SQL Server and LINQ to SQL</li>
-        <li>⚖️ Worked on the application to meet U.S. legal standards, streamline workflows, reduce case preparation time, and improve document accuracy for courtroom use</li>
+        <li> Developed secure, scalable APIs using ASP.NET Web API and C#</li>
+        <li>Built responsive frontend using Angular and TypeScript</li>
+        <li> Integrated AI-based document summarization using OpenAI API</li>
+        <li> Implemented AWS S3 Bucket for secure file storage</li>
+        <li> Designed and optimized database using Microsoft SQL Server and LINQ to SQL</li>
+        <li> Worked on the application to meet U.S. legal standards, streamline workflows, reduce case preparation time, and improve document accuracy for courtroom use</li>
       </ul>
       `,
         techStack: [
@@ -124,11 +124,11 @@ export const PROJECTS: IProject[] = [
             'JIRA',
             'GitHub',
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp', // Placeholder - you can add project images later
-        longThumbnail: '/projects/long/mti-electronics.webp', // Placeholder - you can add project images later
+        thumbnail: '/projects/thumbnail/LCP.png', // Placeholder - you can add project images later
+        longThumbnail: '/projects/long/lcp3', // Placeholder - you can add project images later
         images: [
-            '/projects/images/mti-electronics-1.webp', // Placeholder - you can add project images later
-            '/projects/images/mti-electronics-2.webp', // Placeholder - you can add project images later
+            '/projects/images/lcp-1.png', // Placeholder - you can add project images later
+            '/projects/images/lcp-2.png', // Placeholder - you can add project images later
         ],
     },
     {
@@ -140,22 +140,22 @@ export const PROJECTS: IProject[] = [
       
       Key Features:<br/>
       <ul>
-        <li>👥 Lead Management: Capture, categorize, and track leads from multiple sources, including LinkedIn</li>
-        <li>💬 Response Tracking: Monitor and record LinkedIn interactions and follow-ups</li>
-        <li>📊 Campaign Management: Create, track, and analyze marketing campaigns for ROI</li>
-        <li>📈 Performance Dashboard: Real-time analytics of marketing KPIs and team productivity</li>
-        <li>💾 Centralized Data Storage: Maintain detailed customer and campaign records for easy reporting</li>
+        <li> Lead Management: Capture, categorize, and track leads from multiple sources, including LinkedIn</li>
+        <li> Response Tracking: Monitor and record LinkedIn interactions and follow-ups</li>
+        <li> Campaign Management: Create, track, and analyze marketing campaigns for ROI</li>
+        <li> Performance Dashboard: Real-time analytics of marketing KPIs and team productivity</li>
+        <li> Centralized Data Storage: Maintain detailed customer and campaign records for easy reporting</li>
       </ul>
       `,
         role: `
       Full Stack Developer <br/>
       Responsible for the entire development lifecycle:
       <ul>
-        <li>✅ Designed APIs for lead and meeting management using ASP.NET Web API and C#</li>
-        <li>🎨 Created responsive UI for marketing workflows using Angular and TypeScript</li>
-        <li>📊 Implemented real-time analytics and performance dashboards</li>
-        <li>💾 Optimized database structures using Microsoft SQL Server and LINQ to SQL</li>
-        <li>🚀 Enhanced system efficiency to improve lead tracking, meeting follow-ups, and LinkedIn outreach management</li>
+        <li> Designed APIs for lead and meeting management using ASP.NET Web API and C#</li>
+        <li> Created responsive UI for marketing workflows using Angular and TypeScript</li>
+        <li> Implemented real-time analytics and performance dashboards</li>
+        <li> Optimized database structures using Microsoft SQL Server and LINQ to SQL</li>
+        <li> Enhanced system efficiency to improve lead tracking, meeting follow-ups, and LinkedIn outreach management</li>
       </ul>
       `,
         techStack: [
