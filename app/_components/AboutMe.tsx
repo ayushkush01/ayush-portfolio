@@ -64,20 +64,34 @@ const AboutMe = () => {
                     This is me.
                 </p>
 
-                <div className="grid md:grid-cols-12 mt-9">
+                <div className="grid md:grid-cols-12 mt-9 gap-8">
                     <div className="md:col-span-5">
                         <p className="text-5xl slide-up-and-fade">
                             Hi, I&apos;m Ayush.
                         </p>
                     </div>
                     <div className="md:col-span-7">
-                        <div className="text-lg text-muted-foreground max-w-[450px]">
+                        <div className="text-lg text-muted-foreground max-w-[550px] space-y-6">
+                            {/* WHY Section */}
+                            <div className="slide-up-and-fade p-6 bg-background-light border-l-4 border-primary rounded-r-lg">
+                                <h3 className="text-2xl font-anton text-primary mb-3 uppercase tracking-wider">
+                                    Why I Code
+                                </h3>
+                                <p>
+                                    I code because I believe technology should solve real problems and make people&apos;s lives better.
+                                    Every line of code I write is driven by the desire to create solutions that are not just functional,
+                                    but meaningful. I&apos;m passionate about building applications that empower users, streamline workflows,
+                                    and deliver tangible value to businesses and individuals alike.
+                                </p>
+                            </div>
+
                             <p className="slide-up-and-fade">
                                 I&apos;m a Full Stack .NET Developer dedicated to
                                 turning ideas into creative solutions. I
                                 specialize in building scalable web applications using Angular, .NET, and modern technologies.
                             </p>
-                            <p className="mt-3 slide-up-and-fade">
+
+                            <p className="slide-up-and-fade">
                                 My approach focuses on creating scalable,
                                 high-performing solutions tailored to both user
                                 needs and business objectives. By prioritizing
@@ -85,15 +99,14 @@ const AboutMe = () => {
                                 I strive to deliver applications that not only
                                 meet requirements but also drive tangible business results.
                             </p>
-                            <p className="mt-3 slide-up-and-fade">
+
+                            <p className="slide-up-and-fade">
                                 I value clarity, consistency, and long-term impact in the work I do.
                                 My focus goes beyond implementation — I aim to understand business context,
                                 user expectations, and technical constraints before making decisions.
                                 This mindset helps me build solutions that are maintainable, scalable,
                                 and aligned with real-world requirements.
                             </p>
-
-
                         </div>
                     </div>
                 </div>

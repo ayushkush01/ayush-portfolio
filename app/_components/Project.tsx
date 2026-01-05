@@ -33,7 +33,7 @@ gsap.registerPlugin(useGSAP);
 const Project = ({ index, project, selectedProject, onMouseEnter }: Props) => {
     const externalLinkSVGRef = useRef<SVGSVGElement>(null);
 
-    const { context, contextSafe } = useGSAP(() => {}, {
+    const { context, contextSafe } = useGSAP(() => { }, {
         scope: externalLinkSVGRef,
         revertOnUpdate: true,
     });

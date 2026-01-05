@@ -9,6 +9,8 @@ const ParticleBackground = () => {
     const particlesRef = useRef<HTMLDivElement[]>([]);
 
     useGSAP(() => {
+        if (typeof window === 'undefined') return;
+
         particlesRef.current.forEach((particle) => {
             gsap.set(particle, {
                 width: Math.random() * 3 + 1,

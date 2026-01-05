@@ -25,7 +25,7 @@ const ProjectList = () => {
     useGSAP(
         (context, contextSafe) => {
             // show image on hover
-            if (window.innerWidth < 768) {
+            if (typeof window === 'undefined' || window.innerWidth < 768) {
                 setSelectedProject(null);
                 return;
             }
@@ -34,7 +34,7 @@ const ProjectList = () => {
                 if (!containerRef.current) return;
                 if (!imageContainer.current) return;
 
-                if (window.innerWidth < 768) {
+                if (typeof window === 'undefined' || window.innerWidth < 768) {
                     setSelectedProject(null);
                     return;
                 }

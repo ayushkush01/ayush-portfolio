@@ -25,7 +25,7 @@ const Preloader = () => {
             tl.to('.preloader-item', {
                 delay: 1,
                 y: '100%',
-                duration: 0.5,
+                duration: 0.3,
                 stagger: 0.1,
             })
                 .to('.name-text span', { autoAlpha: 0 }, '<0.5')
