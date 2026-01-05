@@ -89,14 +89,14 @@ export const PROJECTS: IProject[] = [
       A comprehensive legal-medical case management system used by law firms, attorneys, and physicians to handle patient cases from accidents. It centralizes medical records, physician inputs, legal documents, and generates courtroom-ready reports. <br/> <br/>
       
       Key Features:<br/>
-      <ul>
-        <li Records: Upload and store medical documents (X-rays, previous reports) with AI-powered summarization via OpenAI API for quick doctor review</li>
-        <li Interview: Physician-led form with 30 questions for patient data collection</li>
-        <li Exhibits: Upload injury-related photos, stored in AWS S3 Buckets</li>
-        <li Opinions: Record injury assessments and calculate Average Residual Years based on age, gender, and race</li>
-        <li Requirements: Document lifelong needs such as medication, nursing care, and medical equipment</li>
-        <li>Review: Generate consolidated courtroom-ready PDF legal reports</li>
-      </ul>
+     <ul>
+  <li><strong>Records:</strong> Upload and store medical documents (X-rays, previous reports) with AI-powered summarization via OpenAI API for quick doctor review</li>
+  <li><strong>Interview:</strong> Physician-led form with 30 structured questions for patient data collection</li>
+  <li><strong>Exhibits:</strong> Upload injury-related photos securely stored in AWS S3 Buckets</li>
+  <li><strong>Opinions:</strong> Record injury assessments and calculate Average Residual Years based on age, gender, and race</li>
+  <li><strong>Requirements:</strong> Document lifelong needs such as medication, nursing care, and medical equipment</li>
+  <li><strong>Review:</strong> Generate consolidated courtroom-ready PDF legal reports</li>
+</ul>
       `,
         role: `
       Full Stack Developer <br/>
@@ -127,12 +127,12 @@ export const PROJECTS: IProject[] = [
         thumbnail: '/projects/thumbnail/LCP.png', // Placeholder - you can add project images later
         longThumbnail: '/projects/long/lcp3', // Placeholder - you can add project images later
         images: [
-            '/projects/images/lcp-1.png', // Placeholder - you can add project images later
+            './public/projects/thumbnail/medx3.jpg', // Placeholder - you can add project images later
             '/projects/images/lcp-2.png', // Placeholder - you can add project images later
         ],
     },
     {
-        title: 'CRM (Customer Relationship Management)',
+        title: 'Customer Relationship Management',
         slug: 'crm-customer-relationship-management',
         year: 2024,
         description: `
@@ -180,6 +180,11 @@ export const PROJECTS: IProject[] = [
 ];
 
 export const MY_EXPERIENCE = [
+    {
+        title: '.NET Developer Intern',
+        company: 'Satya Techologies',
+        duration: 'July 2024 - SEP 2024',
+    },
     {
         title: 'Full Stack .NET Developer',
         company: 'Option Matrix Infotech',

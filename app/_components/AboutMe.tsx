@@ -85,6 +85,15 @@ const AboutMe = () => {
                                 I strive to deliver applications that not only
                                 meet requirements but also drive tangible business results.
                             </p>
+                            <p className="mt-3 slide-up-and-fade">
+                                I value clarity, consistency, and long-term impact in the work I do.
+                                My focus goes beyond implementation — I aim to understand business context,
+                                user expectations, and technical constraints before making decisions.
+                                This mindset helps me build solutions that are maintainable, scalable,
+                                and aligned with real-world requirements.
+                            </p>
+
+
                         </div>
                     </div>
                 </div>
