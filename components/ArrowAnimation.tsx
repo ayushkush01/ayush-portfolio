@@ -58,13 +58,13 @@ const ArrowAnimation = () => {
             <path
                 className="svg-arrow svg-arrow-1"
                 d="M1 1V39.9286L188 110V70.6822L1 1Z"
-                stroke="#2C2C2C"
+                stroke="hsl(var(--muted-foreground))"
                 ref={arrow1Ref}
             />
             <path
                 className="svg-arrow svg-arrow-2"
                 d="M375 1V39.9286L188 110V70.6822L375 1Z"
-                stroke="#2C2C2C"
+                stroke="hsl(var(--muted-foreground))"
                 ref={arrow2Ref}
             />
         </svg>

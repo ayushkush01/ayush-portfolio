@@ -15,7 +15,19 @@ const Banner = () => {
     // move the content a little up on scroll
     useGSAP(
         () => {
-            const tl = gsap.timeline({
+            // Intro Animation
+            const introTl = gsap.timeline();
+            introTl.from('.slide-up-and-fade', {
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.1,
+                ease: 'power3.out',
+                delay: 2.2, // Wait for preloader
+            });
+
+            // Scroll Animation
+            const scrollTl = gsap.timeline({
                 scrollTrigger: {
                     trigger: containerRef.current,
                     start: 'bottom 70%',
@@ -24,9 +36,8 @@ const Banner = () => {
                 },
             });
 
-            tl.fromTo(
+            scrollTl.to(
                 '.slide-up-and-fade',
-                { y: 0 },
                 { y: -150, opacity: 0, stagger: 0.02 },
             );
         },
@@ -34,64 +45,50 @@ const Banner = () => {
     );
 
     return (
-        <section className="relative overflow-hidden" id="banner">
+        <section className="relative overflow-hidden min-h-screen flex items-center pt-24" id="banner">
             <ArrowAnimation />
             <div
-                className="container h-[100svh] min-h-[530px] max-md:pb-10 flex justify-between items-center max-md:flex-col"
+                className="container relative z-10 grid lg:grid-cols-2 gap-10 items-center"
                 ref={containerRef}
             >
-                <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
-                    <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
-                        <span className="text-primary">Full STACK</span>
-                        <br /> <span className="ml-4">DEVELOPER</span>
+                <div className="flex flex-col justify-center items-start">
+                    <h1 className="banner-title slide-up-and-fade leading-none text-[3.5rem] xs:text-6xl sm:text-8xl md:text-9xl font-anton tracking-tight mb-6">
+                        <span className="text-primary block">FULL STACK</span>
+                        <span className="block text-foreground ml-2 sm:ml-4 opacity-90">DEV.</span>
                     </h1>
-                    <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
-                        Hi! I&apos;m{' '}
-                        <span className="font-medium text-foreground">
-                            Ayush
-                        </span>
-                        . A creative Full Stack .NET Developer with 2+ years of
-                        experience in building high-performance, scalable, and
-                        responsive web solutions.
+                    <p className="banner-description slide-up-and-fade text-xl text-muted-foreground max-w-lg mb-10 leading-relaxed">
+                        Building digital experiences that blend <span className="text-primary font-medium">performance</span> with <span className="text-primary font-medium">aesthetics</span>.
                     </p>
-                    <div className="flex flex-wrap gap-4 mt-9 slide-up-and-fade">
+                    <div className="flex flex-wrap gap-4 slide-up-and-fade">
                         <Button
                             as="link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={`mailto:${GENERAL_INFO.email}`}
+                            href="#contact"
                             variant="primary"
-                            className="banner-button"
+                            className="px-8 py-6 text-lg"
                         >
-                            Contact Me
+                            Start a Project
                         </Button>
                         <a
                             href="/logo/Ayush_Kushwaha_2025.pdf"
                             download="Ayush_Kushwaha_Resume_2025.pdf"
-                            className="banner-button h-12 px-8 inline-flex justify-center items-center gap-2 text-lg uppercase font-anton tracking-widest outline-none transition-colors relative overflow-hidden bg-secondary text-secondary-foreground hover:bg-secondary-hover"
+                            className="group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-md border border-muted-foreground/20 bg-transparent px-8 font-medium text-foreground transition-all duration-300 hover:bg-muted/10 hover:border-primary/50"
                         >
-                            <span className="absolute top-[200%] left-0 right-0 h-full bg-white rounded-[50%] group-hover:top-0 transition-all duration-500 scale-150"></span>
-                            <span className="z-[1]">Download Resume</span>
+                            <span className="mr-2 h-2 w-2 rounded-full bg-primary duration-300 group-hover:scale-150"></span>
+                            Resume
                         </a>
                     </div>
                 </div>
 
-                <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            2+
-                        </h5>
-                        <p className="text-muted-foreground">
-                            Years of Experience
-                        </p>
+                <div className="flex flex-col gap-6 md:items-end slide-up-and-fade">
+                    <div className="p-8 rounded-2xl bg-card/30 backdrop-blur-md border border-white/5 w-full max-w-md hover:border-primary/20 transition-colors">
+                        <h5 className="text-5xl font-anton text-primary mb-2">2+</h5>
+                        <p className="text-lg text-muted-foreground font-medium">Years of Experience</p>
+                        <p className="text-sm text-muted-foreground/60 mt-2">Delivering robust solutions across the stack.</p>
                     </div>
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            3+
-                        </h5>
-                        <p className="text-muted-foreground">
-                            Completed Projects
-                        </p>
+                    <div className="p-8 rounded-2xl bg-card/30 backdrop-blur-md border border-white/5 w-full max-w-md hover:border-primary/20 transition-colors">
+                        <h5 className="text-5xl font-anton text-primary mb-2">3+</h5>
+                        <p className="text-lg text-muted-foreground font-medium">Major Projects</p>
+                        <p className="text-sm text-muted-foreground/60 mt-2">From e-commerce to enterprise dashboards.</p>
                     </div>
                 </div>
             </div>

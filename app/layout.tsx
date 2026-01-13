@@ -53,7 +53,6 @@ export default function RootLayout({
             </Script>
             <body
                 className={`${antonFont.variable} ${robotoFlex.variable} antialiased`}
-                suppressHydrationWarning
             >
                 <ReactLenis
                     root
@@ -75,7 +74,7 @@ export default function RootLayout({
                     <main>{children}</main>
                     <Footer />
 
-                    <CustomCursor />
+
                     <Preloader />
                     <ScrollProgressIndicator />
                     <ParticleBackground />

@@ -9,7 +9,7 @@ const CustomCursor = () => {
     const svgRef = useRef<SVGSVGElement>(null);
 
     useGSAP((context, contextSafe) => {
-        if (typeof window === 'undefined' || window.innerWidth < 768) return;
+        if (window.innerWidth < 768) return;
 
         const handleMouseMove = contextSafe?.((e: MouseEvent) => {
             if (!svgRef.current) return;

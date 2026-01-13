@@ -69,10 +69,9 @@ export default {
             },
             container: {
                 center: true,
-                padding: '1rem',
+                padding: '2rem',
                 screens: {
-                    xl: '1148px',
-                    '2xl': '1148px',
+                    '2xl': '1400px',
                 },
             },
             transitionDuration: {

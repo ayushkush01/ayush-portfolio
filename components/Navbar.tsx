@@ -37,32 +37,42 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="sticky top-0 z-[4]">
-                <button
-                    className={cn(
-                        'group size-12 absolute top-5 right-5 md:right-10 z-[2]',
-                    )}
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                >
-                    <span
+            <div className="fixed top-0 left-0 right-0 z-[40] flex justify-end p-5 md:p-10 pointer-events-none mix-blend-difference">
+                {/* Menu Button Container - pointer-events-auto needed because parent is none */}
+                <div className="pointer-events-auto">
+                    <button
                         className={cn(
-                            'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 -translate-y-[5px] ',
-                            {
-                                'rotate-45 -translate-y-1/2': isMenuOpen,
-                                'md:group-hover:rotate-12': !isMenuOpen,
-                            },
+                            'group relative w-16 h-16 rounded-full bg-foreground flex flex-col items-center justify-center gap-1.5 hover:scale-110 transition-transform duration-300',
+                            isMenuOpen ? "bg-transparent ring-1 ring-white" : ""
                         )}
-                    ></span>
-                    <span
-                        className={cn(
-                            'inline-block w-3/5 h-0.5 bg-foreground rounded-full absolute left-1/2 -translate-x-1/2 top-1/2 duration-300 translate-y-[5px] ',
-                            {
-                                '-rotate-45 -translate-y-1/2': isMenuOpen,
-                                'md:group-hover:-rotate-12': !isMenuOpen,
-                            },
-                        )}
-                    ></span>
-                </button>
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    >
+                        <span
+                            className={cn(
+                                'w-8 h-0.5 bg-background rounded-full transition-all duration-300',
+                                {
+                                    'rotate-45 translate-y-2 bg-white': isMenuOpen,
+                                },
+                            )}
+                        ></span>
+                        <span
+                            className={cn(
+                                'w-8 h-0.5 bg-background rounded-full transition-all duration-300',
+                                {
+                                    'opacity-0': isMenuOpen,
+                                },
+                            )}
+                        ></span>
+                        <span
+                            className={cn(
+                                'w-8 h-0.5 bg-background rounded-full transition-all duration-300',
+                                {
+                                    '-rotate-45 -translate-y-2 bg-white': isMenuOpen,
+                                },
+                            )}
+                        ></span>
+                    </button>
+                </div>
             </div>
 
             <div
@@ -77,7 +87,7 @@ const Navbar = () => {
 
             <div
                 className={cn(
-                    'fixed top-0 right-0 h-[100dvh] w-[500px] max-w-[calc(100vw-3rem)] transform translate-x-full transition-transform duration-700 z-[3] overflow-hidden gap-y-14',
+                    'fixed top-0 right-0 h-[100dvh] w-[500px] max-w-[calc(100vw-3rem)] transform translate-x-full transition-transform duration-700 z-[30] overflow-hidden gap-y-14',
                     'flex flex-col lg:justify-center py-10',
                     { 'translate-x-0': isMenuOpen },
                 )}
