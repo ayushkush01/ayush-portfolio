@@ -21,11 +21,14 @@ const AboutMe = () => {
                 },
             });
 
-            tl.from('.slide-up-and-fade', {
-                y: 150,
-                opacity: 0,
-                stagger: 0.05,
-            });
+            tl.fromTo('.slide-up-and-fade', 
+                { y: 150, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    stagger: 0.05,
+                }
+            );
         },
         { scope: container },
     );
@@ -42,11 +45,15 @@ const AboutMe = () => {
                 },
             });
 
-            tl.to('.slide-up-and-fade', {
-                y: -150,
-                opacity: 0,
-                stagger: 0.02,
-            });
+            tl.fromTo('.slide-up-and-fade', 
+                { y: 0, opacity: 1 },
+                {
+                    y: -150,
+                    opacity: 0,
+                    stagger: 0.02,
+                    immediateRender: false,
+                }
+            );
         },
         { scope: container },
     );

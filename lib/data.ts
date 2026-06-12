@@ -132,6 +132,94 @@ export const PROJECTS: IProject[] = [
         ],
     },
     {
+        title: 'PCMX - Personal Care Management Platform',
+        slug: 'pcmx-personal-care-management-platform',
+        year: 2024,
+        description: `
+      Enterprise-grade healthcare and legal workflow management platform for hospital networks handling personal injury cases. Streamlines patient intake, referral management, care coordination, claims processing, and funding management across legal, insurance, mass tort, and direct-pay scenarios. <br/> <br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li><strong>Patient Intake & Referrals:</strong> Streamlined patient intake, referral tracking, and claims workflow</li>
+        <li><strong>Dashboard Analytics:</strong> Real-time analytics, patient record management, and correlation ID injection</li>
+        <li><strong>Global Exception Handling:</strong> Consistent structured error responses preventing data leakage</li>
+        <li><strong>Security & Authentication:</strong> JWT, WebAuthn (Passkey), MFA, and Resend API for OTP</li>
+        <li><strong>Third-party API Integrations:</strong> NPI Registry, TITAN, and GoRev APIs for data synchronization</li>
+        <li><strong>Generative AI:</strong> AWS Bedrock integration for automated clinical notes summarization and extraction</li>
+      </ul>
+      `,
+        role: `
+      Full Stack Developer <br/>
+      Architected and engineered core modules and workflows:
+      <ul>
+        <li> Architected responsive web modules using Angular, TypeScript, and Angular Material</li>
+        <li> Built and consumed 20+ RESTful APIs using ASP.NET Core Web API and C#</li>
+        <li> Implemented custom ASP.NET Core Middleware and Global Exception Handling</li>
+        <li> Integrated Serilog with AWS CloudWatch sinks for structured diagnostic logging</li>
+        <li> Secured the application with JWT, WebAuthn, MFA, and granular RBAC</li>
+        <li> Implemented AWS Bedrock (Generative AI) for automated clinical notes summarization</li>
+      </ul>
+      `,
+        techStack: [
+            'Angular',
+            'TypeScript',
+            'C#',
+            'ASP.NET Core',
+            'Entity Framework Core',
+            'MS SQL Server',
+            'AWS Bedrock',
+            'AWS S3',
+            'AWS CloudWatch',
+            'OpenAI API',
+            'JWT',
+            'WebAuthn',
+            'Serilog',
+            'Swagger',
+            'GitHub',
+        ],
+        thumbnail: '/projects/thumbnail/pcmx.png', // Placeholder - you can add project images later
+        longThumbnail: '/projects/long/pcmx.png', // Placeholder - you can add project images later
+        images: [
+            '/projects/images/pcmx-1.png', // Placeholder - you can add project images later
+            '/projects/images/pcmx-2.png', // Placeholder - you can add project images later
+        ],
+    },
+    {
+        title: 'CHART X - Healthcare Records Retrieval System',
+        slug: 'chart-x-healthcare-records-retrieval-system',
+        year: 2024,
+        description: `
+      A secure and scalable Healthcare Records Retrieval & Exchange Platform that enables law firms and insurance companies to request, track, and access patient medical, billing, and imaging records from hospital networks. <br/> <br/>
+      
+      Key Features:<br/>
+      <ul>
+        <li><strong>Centralized Access:</strong> Request, track, and access patient medical, billing, and imaging records</li>
+        <li><strong>Automated Workflows:</strong> Eliminates manual processes like emails and faxes</li>
+        <li><strong>Compliance & Security:</strong> Provides a secure, automated, and compliant workflow system for healthcare data exchange</li>
+      </ul>
+      `,
+        role: `
+      Full Stack Developer <br/>
+      <ul>
+        <li> Developed secure and scalable platform architecture</li>
+        <li> Implemented automated compliance workflows for records retrieval</li>
+      </ul>
+      `,
+        techStack: [
+            'Angular',
+            'TypeScript',
+            'C#',
+            'ASP.NET Core',
+            'MS SQL Server'
+        ],
+        thumbnail: '/projects/thumbnail/chartx.png', // Placeholder - you can add project images later
+        longThumbnail: '/projects/long/chartx.png', // Placeholder - you can add project images later
+        images: [
+            '/projects/images/chartx-1.png', // Placeholder - you can add project images later
+            '/projects/images/chartx-2.png', // Placeholder - you can add project images later
+        ],
+    },
+    {
         title: 'Customer Relationship Management',
         slug: 'crm-customer-relationship-management',
         year: 2024,
@@ -183,7 +271,7 @@ export const MY_EXPERIENCE = [
     {
         title: '.NET Developer Intern',
         company: 'Satya Techologies',
-        duration: 'July 2024 - SEP 2024',
+        duration: 'April 2024 - Sep 2024',
     },
     {
         title: 'Full Stack .NET Developer',

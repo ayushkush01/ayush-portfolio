@@ -15,16 +15,21 @@ const Banner = () => {
     // move the content a little up on scroll
     useGSAP(
         () => {
+            const hasVisited = sessionStorage.getItem('hasVisited');
+
             // Intro Animation
             const introTl = gsap.timeline();
-            introTl.from('.slide-up-and-fade', {
-                y: 50,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.1,
-                ease: 'power3.out',
-                delay: 2.2, // Wait for preloader
-            });
+            introTl.fromTo('.slide-up-and-fade',
+                { y: 50, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 1,
+                    stagger: 0.1,
+                    ease: 'power3.out',
+                    delay: hasVisited ? 0.2 : 2.2,
+                }
+            );
 
             // Scroll Animation
             const scrollTl = gsap.timeline({
@@ -52,6 +57,9 @@ const Banner = () => {
                 ref={containerRef}
             >
                 <div className="flex flex-col justify-center items-start">
+                    <p className="banner-subtitle slide-up-and-fade text-xl md:text-2xl text-muted-foreground mb-4 font-medium tracking-wide">
+                        Hi, I&apos;m <span className="text-foreground">Ayush Kushwaha</span>
+                    </p>
                     <h1 className="banner-title slide-up-and-fade leading-none text-[3.5rem] xs:text-6xl sm:text-8xl md:text-9xl font-anton tracking-tight mb-6">
                         <span className="text-primary block">FULL STACK</span>
                         <span className="block text-foreground ml-2 sm:ml-4 opacity-90">DEV.</span>

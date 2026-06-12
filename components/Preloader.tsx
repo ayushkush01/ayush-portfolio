@@ -10,6 +10,12 @@ const Preloader = () => {
 
     useGSAP(
         () => {
+            if (sessionStorage.getItem('hasVisited')) {
+                gsap.set(preloaderRef.current, { display: 'none' });
+                return;
+            }
+            sessionStorage.setItem('hasVisited', 'true');
+
             const tl = gsap.timeline({
                 defaults: {
                     ease: 'power1.inOut',
