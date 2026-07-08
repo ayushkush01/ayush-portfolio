@@ -34,7 +34,7 @@ export const MY_STACK = {
             name: 'Tailwind CSS',
             icon: '/logo/tailwind.png',
         },
-       
+
     ],
     backend: [
         {

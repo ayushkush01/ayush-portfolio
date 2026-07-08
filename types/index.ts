@@ -28,3 +28,15 @@ export interface IProject {
     liveUrl?: string;
     sourceCode?: string;
 }
+
+export interface IBlogPost {
+    title: string;
+    slug: string;
+    date: string;
+    readTime: string;
+    description: string;
+    content: string;
+    tags: string[];
+    thumbnail: string;
+}
+

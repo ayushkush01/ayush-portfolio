@@ -64,6 +64,42 @@
         @apply pl-5 mt-2 list-disc;
     }
 
+    .blog-content p {
+        @apply mb-6 text-muted-foreground leading-relaxed text-base md:text-lg;
+    }
+
+    .blog-content h3 {
+        @apply text-xl md:text-2xl font-bold mt-10 mb-4 text-white tracking-tight;
+    }
+
+    .blog-content ul, .blog-content ol {
+        @apply pl-6 mb-6 space-y-2 text-muted-foreground text-base md:text-lg;
+    }
+
+    .blog-content ul {
+        @apply list-disc;
+    }
+
+    .blog-content ol {
+        @apply list-decimal;
+    }
+
+    .blog-content li {
+        @apply leading-relaxed;
+    }
+
+    .blog-content pre {
+        @apply bg-background-light border border-white/10 p-5 rounded-xl overflow-x-auto my-8 text-sm font-mono text-zinc-300;
+    }
+
+    .blog-content code {
+        @apply bg-white/10 px-1.5 py-0.5 rounded text-sm font-mono text-white;
+    }
+    
+    .blog-content pre code {
+        @apply bg-transparent p-0 text-zinc-300;
+    }
+
     .animate-marquee {
         animation: marquee 25s linear infinite;
     }
